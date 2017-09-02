@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- File in formato Easyfatt-XML creato con Danea Easyfatt - www.danea.it/software/easyfatt -->
+<!-- Per importare o creare un file in formato Easyfatt-Xml, consultare la documentazione tecnica: www.danea.it/software/easyfatt/xml -->
+<EasyfattDocuments AppVersion="2" Creator="Danea Easyfatt Enterprise  2011.15" CreatorUrl="http://www.danea.it/software/easyfatt">
+  <Company>
+    <Name>Tuttobimbi Srl</Name>
+    <Address>Via Armando Diaz, 162</Address>
+    <Postcode>35010</Postcode>
+    <City>Vigonza</City>
+    <Province>PD</Province>
+    <Country>Italia</Country>
+    <FiscalCode>00165987261</FiscalCode>
+    <VatCode>00165987261</VatCode>
+    <Tel>049/1234567</Tel>
+    <Fax>049/1234568</Fax>
+    <Email>info@tutto-bimbi.com</Email>
+    <HomePage>www.tutto-bimbi.com</HomePage>
+  </Company>
+  <Documents>
+    <Document>
+      <CustomerCode>0055</CustomerCode>
+      <CustomerWebLogin></CustomerWebLogin>
+      <CustomerName>Il Puffetto</CustomerName>
+      <CustomerAddress>Via Carducci, 4</CustomerAddress>
+      <CustomerPostcode>27035</CustomerPostcode>
+      <CustomerCity>Mede</CustomerCity>
+      <CustomerProvince>PV</CustomerProvince>
+      <CustomerCountry></CustomerCountry>
+      <CustomerVatCode>26899510269</CustomerVatCode>
+      <CustomerTel>0384 865980</CustomerTel>
+      <DocumentType>I</DocumentType>
+      <Warehouse>Principale</Warehouse>
+      <Date>2009-02-28</Date>
+      <Number>69</Number>
+      <Numbering></Numbering>
+      <CostDescription></CostDescription>
+      <CostVatCode></CostVatCode>
+      <CostAmount></CostAmount>
+      <TotalWithoutTax>985.2</TotalWithoutTax>
+      <VatAmount>197.04</VatAmount>
+      <WithholdingTaxAmount>0</WithholdingTaxAmount>
+      <Total>1182.24</Total>
+      <PriceList>Tess. argento</PriceList>
+      <PricesIncludeVat>false</PricesIncludeVat>
+      <WithholdingTaxPerc>0</WithholdingTaxPerc>
+      <PaymentName>R.B. 30-60 Giorni F.M.</PaymentName>
+      <PaymentBank>Banca Etruria - CIN 9  ABI 98750  CAB 663  C/C 659812C</PaymentBank>
+      <Payments>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-03-28</Date>
+          <Amount>591.12</Amount>
+          <Paid>true</Paid>
+        </Payment>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-04-28</Date>
+          <Amount>591.12</Amount>
+          <Paid>false</Paid>
+        </Payment>
+      </Payments>
+      <InternalComment></InternalComment>
+      <CustomField1></CustomField1>
+      <CustomField2></CustomField2>
+      <CustomField3></CustomField3>
+      <CustomField4></CustomField4>
+      <FootNotes></FootNotes>
+      <SalesAgent></SalesAgent>
+      <Rows>
+        <Row>
+          <Code></Code>
+          <Description>Rif. DDT 49 del 18/2/09:</Description>
+          <Qty></Qty>
+          <Um></Um>
+          <Price></Price>
+          <Discounts></Discounts>
+          <VatCode></VatCode>
+          <Total></Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0047</Code>
+          <Description>Barriera letto</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>74.29</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>742.9</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0048</Code>
+          <Description>Vetro sicuro</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>12.6</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>126</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0049</Code>
+          <Description>Tappetino antiscivolo  da vasca</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>11.63</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>116.3</Total>
+          <Stock>false</Stock>
+        </Row>
+      </Rows>
+    </Document>
+    <Document>
+      <CustomerCode>0056</CustomerCode>
+      <CustomerWebLogin></CustomerWebLogin>
+      <CustomerName>Mondo Felice</CustomerName>
+      <CustomerAddress>Via Paolo Borsellino, 60</CustomerAddress>
+      <CustomerPostcode>36050</CustomerPostcode>
+      <CustomerCity>Bolzano Vicentino</CustomerCity>
+      <CustomerProvince>VI</CustomerProvince>
+      <CustomerCountry></CustomerCountry>
+      <CustomerVatCode>96321589329</CustomerVatCode>
+      <CustomerTel>0444 345840</CustomerTel>
+      <DocumentType>I</DocumentType>
+      <Warehouse>Principale</Warehouse>
+      <Date>2009-02-28</Date>
+      <Number>70</Number>
+      <Numbering></Numbering>
+      <CostDescription></CostDescription>
+      <CostVatCode></CostVatCode>
+      <CostAmount></CostAmount>
+      <TotalWithoutTax>119.95</TotalWithoutTax>
+      <VatAmount>23.99</VatAmount>
+      <WithholdingTaxAmount>0</WithholdingTaxAmount>
+      <Total>143.94</Total>
+      <PriceList>Tess. oro</PriceList>
+      <PricesIncludeVat>false</PricesIncludeVat>
+      <WithholdingTaxPerc>0</WithholdingTaxPerc>
+      <PaymentName>R.B. 30-60 Giorni F.M.</PaymentName>
+      <PaymentBank>Mediobanca - CIN 5  ABI 69821  CAB 659  C/C 3201598MM</PaymentBank>
+      <Payments>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-03-28</Date>
+          <Amount>71.97</Amount>
+          <Paid>true</Paid>
+        </Payment>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-04-28</Date>
+          <Amount>71.97</Amount>
+          <Paid>false</Paid>
+        </Payment>
+      </Payments>
+      <InternalComment></InternalComment>
+      <CustomField1></CustomField1>
+      <CustomField2></CustomField2>
+      <CustomField3></CustomField3>
+      <CustomField4></CustomField4>
+      <FootNotes></FootNotes>
+      <SalesAgent></SalesAgent>
+      <Rows>
+        <Row>
+          <Code></Code>
+          <Description>Rif. DDT 27 del 14/2/09:</Description>
+          <Qty></Qty>
+          <Um></Um>
+          <Price></Price>
+          <Discounts></Discounts>
+          <VatCode></VatCode>
+          <Total></Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0011</Code>
+          <Description>Anello refrigerante</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>4.45</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>22.25</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0012</Code>
+          <Description>Clip con catenella</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>4.62</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>46.2</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0014</Code>
+          <Description>Gommotto</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>5.15</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>51.5</Total>
+          <Stock>false</Stock>
+        </Row>
+      </Rows>
+    </Document>
+    <Document>
+      <CustomerCode>0057</CustomerCode>
+      <CustomerWebLogin></CustomerWebLogin>
+      <CustomerName>L'isola Del Tesoro</CustomerName>
+      <CustomerAddress>Via Raffaello, 28</CustomerAddress>
+      <CustomerPostcode>33080</CustomerPostcode>
+      <CustomerCity>Fiume Veneto</CustomerCity>
+      <CustomerProvince>PN</CustomerProvince>
+      <CustomerCountry></CustomerCountry>
+      <CustomerVatCode>96325874136</CustomerVatCode>
+      <CustomerTel>0434 968992</CustomerTel>
+      <DocumentType>I</DocumentType>
+      <Warehouse>Principale</Warehouse>
+      <Date>2009-02-28</Date>
+      <Number>71</Number>
+      <Numbering></Numbering>
+      <CostDescription></CostDescription>
+      <CostVatCode></CostVatCode>
+      <CostAmount></CostAmount>
+      <TotalWithoutTax>190.6</TotalWithoutTax>
+      <VatAmount>38.12</VatAmount>
+      <WithholdingTaxAmount>0</WithholdingTaxAmount>
+      <Total>228.72</Total>
+      <PriceList>Tess. argento</PriceList>
+      <PricesIncludeVat>false</PricesIncludeVat>
+      <WithholdingTaxPerc>0</WithholdingTaxPerc>
+      <PaymentName>R.B. 30 Giorni F.M.</PaymentName>
+      <PaymentBank>Banca di Vicenza - CIN H  ABI 12987  CAB 12695  C/C 158723H</PaymentBank>
+      <Payments>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-03-31</Date>
+          <Amount>228.72</Amount>
+          <Paid>true</Paid>
+        </Payment>
+      </Payments>
+      <InternalComment></InternalComment>
+      <CustomField1></CustomField1>
+      <CustomField2></CustomField2>
+      <CustomField3></CustomField3>
+      <CustomField4></CustomField4>
+      <FootNotes></FootNotes>
+      <SalesAgent></SalesAgent>
+      <Rows>
+        <Row>
+          <Code></Code>
+          <Description>Rif. DDT 40 del 17/2/09:</Description>
+          <Qty></Qty>
+          <Um></Um>
+          <Price></Price>
+          <Discounts></Discounts>
+          <VatCode></VatCode>
+          <Total></Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0001</Code>
+          <Description>Coppette assorbilatte</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>7.75</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>77.5</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0002</Code>
+          <Description>Bavaglini monouso</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>11.31</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>113.1</Total>
+          <Stock>false</Stock>
+        </Row>
+      </Rows>
+    </Document>
+    <Document>
+      <CustomerCode>0058</CustomerCode>
+      <CustomerWebLogin></CustomerWebLogin>
+      <CustomerName>Amici del  Gioco</CustomerName>
+      <CustomerAddress>Via Ctr. Di Suio, 56</CustomerAddress>
+      <CustomerPostcode>04021</CustomerPostcode>
+      <CustomerCity>Castelforte</CustomerCity>
+      <CustomerProvince>LT</CustomerProvince>
+      <CustomerCountry></CustomerCountry>
+      <CustomerVatCode>66982157196</CustomerVatCode>
+      <CustomerTel>0771 656890</CustomerTel>
+      <DocumentType>I</DocumentType>
+      <Warehouse>Principale</Warehouse>
+      <Date>2009-02-28</Date>
+      <Number>72</Number>
+      <Numbering></Numbering>
+      <CostDescription></CostDescription>
+      <CostVatCode></CostVatCode>
+      <CostAmount></CostAmount>
+      <TotalWithoutTax>511.6</TotalWithoutTax>
+      <VatAmount>102.32</VatAmount>
+      <WithholdingTaxAmount>0</WithholdingTaxAmount>
+      <Total>613.92</Total>
+      <PriceList>Privati</PriceList>
+      <PricesIncludeVat>false</PricesIncludeVat>
+      <WithholdingTaxPerc>0</WithholdingTaxPerc>
+      <PaymentName>Bonifico 30-60 gg F.M.</PaymentName>
+      <PaymentBank>Cassa di Risparmio - IBAN IT83 H062 2562 9610 7404 2366 76W</PaymentBank>
+      <Payments>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-03-31</Date>
+          <Amount>306.96</Amount>
+          <Paid>true</Paid>
+        </Payment>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-04-30</Date>
+          <Amount>306.96</Amount>
+          <Paid>true</Paid>
+        </Payment>
+      </Payments>
+      <InternalComment></InternalComment>
+      <CustomField1></CustomField1>
+      <CustomField2></CustomField2>
+      <CustomField3></CustomField3>
+      <CustomField4></CustomField4>
+      <FootNotes></FootNotes>
+      <SalesAgent></SalesAgent>
+      <Rows>
+        <Row>
+          <Code></Code>
+          <Description>Rif. DDT 75 del 23/2/09:</Description>
+          <Qty></Qty>
+          <Um></Um>
+          <Price></Price>
+          <Discounts></Discounts>
+          <VatCode></VatCode>
+          <Total></Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0011</Code>
+          <Description>Anello refrigerante</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>5.24</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>26.2</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0010</Code>
+          <Description>Bicchiere antigoccia</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>4.26</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>21.3</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0009</Code>
+          <Description>Cucchiaio silicone</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>3.06</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>15.3</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0008</Code>
+          <Description>Seggiolone</Description>
+          <Qty>2</Qty>
+          <Um>pz</Um>
+          <Price>130.56</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>261.12</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0007</Code>
+          <Description>Seggiolino da tavolo</Description>
+          <Qty>2</Qty>
+          <Um>pz</Um>
+          <Price>66.64</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>133.28</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0006</Code>
+          <Description>Posatine</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>10.88</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>54.4</Total>
+          <Stock>false</Stock>
+        </Row>
+      </Rows>
+    </Document>
+    <Document>
+      <CustomerCode>0059</CustomerCode>
+      <CustomerWebLogin></CustomerWebLogin>
+      <CustomerName>Apriti Sesamo</CustomerName>
+      <CustomerAddress>Via Villecco, 10</CustomerAddress>
+      <CustomerPostcode>8409</CustomerPostcode>
+      <CustomerCity>Battipaglia</CustomerCity>
+      <CustomerProvince>SA</CustomerProvince>
+      <CustomerCountry></CustomerCountry>
+      <CustomerVatCode>15983021548</CustomerVatCode>
+      <CustomerTel>0828 387541</CustomerTel>
+      <DocumentType>I</DocumentType>
+      <Warehouse>Principale</Warehouse>
+      <Date>2009-02-28</Date>
+      <Number>73</Number>
+      <Numbering></Numbering>
+      <CostDescription></CostDescription>
+      <CostVatCode></CostVatCode>
+      <CostAmount></CostAmount>
+      <TotalWithoutTax>434.92</TotalWithoutTax>
+      <VatAmount>86.98</VatAmount>
+      <WithholdingTaxAmount>0</WithholdingTaxAmount>
+      <Total>521.9</Total>
+      <PriceList>Tess. oro</PriceList>
+      <PricesIncludeVat>false</PricesIncludeVat>
+      <WithholdingTaxPerc>0</WithholdingTaxPerc>
+      <PaymentName>R.B. 30-60-90 Giorni F.M.</PaymentName>
+      <PaymentBank>Banca Nazionale del Lavoro - CIN 9  ABI 32985  CAB 187  C/C 98206044P</PaymentBank>
+      <Payments>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-03-31</Date>
+          <Amount>172.22</Amount>
+          <Paid>true</Paid>
+        </Payment>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-04-30</Date>
+          <Amount>172.22</Amount>
+          <Paid>true</Paid>
+        </Payment>
+        <Payment>
+          <Advance>false</Advance>
+          <Date>2009-05-31</Date>
+          <Amount>177.46</Amount>
+          <Paid>false</Paid>
+        </Payment>
+      </Payments>
+      <InternalComment></InternalComment>
+      <CustomField1></CustomField1>
+      <CustomField2></CustomField2>
+      <CustomField3></CustomField3>
+      <CustomField4></CustomField4>
+      <FootNotes></FootNotes>
+      <SalesAgent></SalesAgent>
+      <Rows>
+        <Row>
+          <Code></Code>
+          <Description>Rif. DDT 74 del 23/2/09:</Description>
+          <Qty></Qty>
+          <Um></Um>
+          <Price></Price>
+          <Discounts></Discounts>
+          <VatCode></VatCode>
+          <Total></Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0043</Code>
+          <Description>Vasino</Description>
+          <Qty>10</Qty>
+          <Um>pz</Um>
+          <Price>19.94</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>199.4</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0019</Code>
+          <Description>Pannolini I Morbidosi 5-9 KG</Description>
+          <Qty>1</Qty>
+          <Um>pz</Um>
+          <Price>10.12</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>10.12</Total>
+          <Stock>false</Stock>
+        </Row>
+        <Row>
+          <Code>0023</Code>
+          <Description>Fasciatoio</Description>
+          <Qty>5</Qty>
+          <Um>pz</Um>
+          <Price>45.08</Price>
+          <Discounts></Discounts>
+          <VatCode>20</VatCode>
+          <Total>225.4</Total>
+          <Stock>false</Stock>
+        </Row>
+      </Rows>
+    </Document>
+  </Documents>
+</EasyfattDocuments>

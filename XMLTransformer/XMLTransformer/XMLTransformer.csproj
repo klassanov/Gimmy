@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XMLHelper\XMLHelper.csproj">
+      <Project>{402e760b-9d23-4f75-9b3b-55e3fba670f1}</Project>
+      <Name>XMLHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
