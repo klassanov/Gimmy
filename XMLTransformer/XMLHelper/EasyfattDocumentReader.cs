@@ -16,22 +16,10 @@ namespace XMLHelper
             string schemaPath = "D:/SW Development/Customers/Gimmy/XML Transformer/easyfatt-xml.xsd";
 
             EasyfattDocuments easyfattDocuments = null;
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(EasyfattDocuments));
-
-            
-
-
-            //??Validate the file against the schema??
-            XmlReaderSettings readerSettings = new XmlReaderSettings();
-            
-            //readerSettings.Schemas.Add("", schemaPath);
-            //readerSettings.ValidationType = ValidationType.Schema;
-
-            //XmlValidatingReader validatingReader=new 
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(EasyfattDocuments));        
 
             using (XmlReader xmlReader = XmlReader.Create(filePath))
             { 
-              
                 easyfattDocuments = xmlSerializer.Deserialize(xmlReader) as EasyfattDocuments;
             }
             return easyfattDocuments;
