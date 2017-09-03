@@ -47,5 +47,10 @@
   <ItemGroup>
     <Content Include="Samples\Danea _Example.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Samples\easyfatt-xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

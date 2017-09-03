@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.10.3537 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="EasyfattDocuments">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Company" type="CompanyType" minOccurs="0" />
+                <xs:element name="Documents" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Document" type="DocumentType" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="AppVersion" type="xs:int" />
+            <xs:attribute name="Creator" type="xs:string" />
+            <xs:attribute name="CreatorUrl" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="CompanyType">
+        <xs:all>
+            <xs:element name="Name" type="xs:string" minOccurs="0" />
+            <xs:element name="Address" type="xs:string" minOccurs="0" />
+            <xs:element name="Postcode" type="xs:string" minOccurs="0" />
+            <xs:element name="City" type="xs:string" minOccurs="0" />
+            <xs:element name="Province" type="xs:string" minOccurs="0" />
+            <xs:element name="Country" type="xs:string" minOccurs="0" />
+            <xs:element name="FiscalCode" type="xs:string" minOccurs="0" />
+            <xs:element name="VatCode" type="xs:string" minOccurs="0" />
+            <xs:element name="Tel" type="xs:string" minOccurs="0" />
+            <xs:element name="Fax" type="xs:string" minOccurs="0" />
+            <xs:element name="Email" type="xs:string" minOccurs="0" />
+            <xs:element name="HomePage" type="xs:string" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="DocumentType">
+        <xs:all>
+            <xs:element name="DocumentType" default="C">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">è il codice corrispondente al tipo di documento; se questo tag viene omesso, il documento sarà considerato un ordine cliente. Elenco dei tipi ammessi:
+A: Avviso di parcella
+B: Vendita al banco
+C: Ordine cliente (tipo predefinito)
+D: Documento di trasporto
+E: Ordine fornitore
+F: Fattura accompagnatoria
+G: Rapporto d'intervento
+I: Fattura
+J: Fattura d'acconto
+L: Fattura pro-forma
+M: Autofattura
+N: Nota d'accredito
+O: Nota d'addebito
+P: Parcella
+Q: Preventivo
+R: Ricevuta fiscale
+S: Preventivo fornitore
+H: Arrivi merce fornitore</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="A" />
+                        <xs:enumeration value="B" />
+                        <xs:enumeration value="C" />
+                        <xs:enumeration value="D" />
+                        <xs:enumeration value="E" />
+                        <xs:enumeration value="F" />
+                        <xs:enumeration value="G" />
+                        <xs:enumeration value="I" />
+                        <xs:enumeration value="L" />
+                        <xs:enumeration value="M" />
+                        <xs:enumeration value="N" />
+                        <xs:enumeration value="O" />
+                        <xs:enumeration value="P" />
+                        <xs:enumeration value="Q" />
+                        <xs:enumeration value="R" />
+                        <xs:enumeration value="S" />
+                        <xs:enumeration value="H" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Date" type="xs:date" />
+            <xs:element name="Number" type="xs:int" minOccurs="0" />
+            <xs:element name="Numbering" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Numerazione documento ( /a, /b, etc.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CustomerName" type="xs:string" />
+            <xs:element name="CustomerCode" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerWebLogin" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerAddress" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerPostcode" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerCity" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerProvince" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="2" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="CustomerCountry" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerFiscalCode" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerVatCode" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerReference" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerTel" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerCellPhone" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerFax" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerEmail" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomerPec" type="xs:string" minOccurs="0" />
+            <xs:element name="DeliveryName" type="xs:string" minOccurs="0" />
+            <xs:element name="DeliveryAddress" type="xs:string" minOccurs="0" />
+            <xs:element name="DeliveryPostcode" type="xs:string" minOccurs="0" />
+            <xs:element name="DeliveryCity" type="xs:string" minOccurs="0" />
+            <xs:element name="DeliveryProvince" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="2" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="DeliveryCountry" type="xs:string" minOccurs="0" />
+            <xs:element name="Warehouse" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Denominazione del magazzino movimentato</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CostDescription" type="xs:string" minOccurs="0" />
+            <xs:element name="CostVatCode" minOccurs="0">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="Perc" type="xs:decimal" use="optional" />
+                            <xs:attribute name="Class" type="xs:string" use="optional" />
+                            <xs:attribute name="Description" type="xs:string" use="optional" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="CostAmount" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="TotalWithoutTax" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="VatAmount" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="WithholdingTaxAmount" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="WithholdingTaxAmountB" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="Total" type="xs:decimal" />
+            <xs:element name="PriceList" type="xs:string" minOccurs="0" />
+            <xs:element name="PricesIncludeVat" type="xs:boolean" minOccurs="0" />
+            <xs:element name="WithholdingTaxPerc" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="WithholdingTaxPerc2" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="WithholdingTaxNameB" type="xs:string" minOccurs="0" />
+            <xs:element name="ContribDescription" type="xs:string" minOccurs="0" />
+            <xs:element name="ContribPerc" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="ContribSubjectToWithholdingTax" type="xs:boolean" minOccurs="0" default="false" nillable="true" />
+            <xs:element name="ContribAmount" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="ContribVatCode" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="PaymentName" type="xs:string" minOccurs="0" />
+            <xs:element name="PaymentBank" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomField1" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomField2" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomField3" type="xs:string" minOccurs="0" />
+            <xs:element name="CustomField4" type="xs:string" minOccurs="0" />
+            <xs:element name="FootNotes" type="xs:string" minOccurs="0" />
+            <xs:element name="SalesAgent" type="xs:string" minOccurs="0" />
+            <xs:element name="DelayedVat" type="xs:boolean" minOccurs="0" />
+            <xs:element name="DelayedVatDesc" type="xs:string" minOccurs="0" />
+            <xs:element name="DelayedVatDueWithinOneYear" type="xs:boolean" minOccurs="0" />
+            <xs:element name="PaymentAdvanceAmount" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="Carrier" type="xs:string" minOccurs="0" />
+            <xs:element name="TransportReason" type="xs:string" minOccurs="0" />
+            <xs:element name="GoodsAppearance" type="xs:string" minOccurs="0" />
+            <xs:element name="TransportDateTime" type="xs:string" minOccurs="0" />
+            <xs:element name="ShipmentTerms" type="xs:string" minOccurs="0" />
+            <xs:element name="TransportedWeight" type="xs:double" minOccurs="0" default="0" />
+            <xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+            <xs:element name="InternalComment" type="xs:string" minOccurs="0" />
+            <xs:element name="NumOfPieces" type="xs:int" minOccurs="0" default="0" nillable="true" />
+            <xs:element name="ExpectedConclusionDate" type="xs:date" minOccurs="0" default="2999-12-31">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">data di conclusione prevista (usato esclusivamente negli ordini clienti e fornitori)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DocReference" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">causale del documento</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Rows" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Row" type="RowType" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Payments" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Payment" type="PaymentType" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Pdf" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:base64Binary">
+                            <xs:attribute name="FileName" type="xs:string" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="RowType">
+        <xs:all>
+            <xs:element name="Code" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">codice prodotto</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SupplierCode" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Codice prodotto del fornitore</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Description" type="xs:string" minOccurs="0" />
+            <xs:element name="Qty" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="Um" type="xs:string" minOccurs="0" />
+            <xs:element name="Size" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">taglia (usato nel settore dell'abbigliamento)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Color" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">colore (usato nel settore dell'abbigliamento)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Lot" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">codice lotto</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ExpiryDate" type="xs:date" minOccurs="0" default="2999-12-31">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">data scadenza lotto</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Serial" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">codice seriale o codice matricola del prodotto</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Price" type="xs:decimal" minOccurs="0" default="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">prezzo unitario</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Discounts" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Sconti (es: "20+5.5%")</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EcoFee" type="xs:decimal" minOccurs="0" default="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">importo eco-contributo</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VatCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">codice iva usato (attenzione, non si tratta del valore percenutale di tassazione)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="Perc" type="xs:decimal" use="optional" />
+                            <xs:attribute name="Class" type="xs:string" use="optional" />
+                            <xs:attribute name="Description" type="xs:string" use="optional" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Total" type="xs:decimal" minOccurs="0" default="0" />
+            <xs:element name="WithholdingTax" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">ritenuta d'acconto applicata</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Stock" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">movimentazione magazzino</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CommissionPerc" type="xs:decimal" minOccurs="0" default="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">percentuale provvigione agente</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Notes" type="xs:string" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="PaymentType">
+        <xs:all>
+            <xs:element name="Advance" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Se TRUE, segnala che il pagamento è riferito ad un acconto</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Date" type="xs:date" minOccurs="1" />
+            <xs:element name="Amount" type="xs:decimal" minOccurs="1" />
+            <xs:element name="Paid" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="IT">Se TRUE, significa che il pagamento è stato eseguito </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

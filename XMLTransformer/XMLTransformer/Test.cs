@@ -11,11 +11,9 @@ namespace XMLTransformer
     {
         public static int Main(string[] args)
         {
-            Console.WriteLine("Hello world");
-
+            Console.WriteLine("Hello Lulu, come stai?");
             EasyfattDocumentReader reader = new EasyfattDocumentReader();
-            EasyfattDocuments documents=reader.ParseXmlDocument();
-
+            EasyfattDocuments documents = reader.ParseXmlDocument();
             Console.ReadKey();
             return 0;
         }
