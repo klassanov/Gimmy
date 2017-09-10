@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using FilesHelper;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,8 @@ namespace XMLTransformer
             try
             {
                 EasyfattDocumentReader reader = new EasyfattDocumentReader();
-                EasyfattDocuments documents = reader.ParseXmlDocument();               
+                EasyfattDocuments documents = reader.ParseXmlDocument();
+                TxtFileWriter.WriteFile();
                 Logger.Debug("Done!");
             }
             catch (Exception ex)
