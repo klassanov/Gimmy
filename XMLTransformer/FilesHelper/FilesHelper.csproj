@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fields\Field.cs" />
+    <Compile Include="Fields\IntegerField.cs" />
+    <Compile Include="Fields\CurrencyField.cs" />
+    <Compile Include="Fields\StringField.cs" />
+    <Compile Include="Movago\MovagoFileWriter.cs" />
+    <Compile Include="Movago\MovagoRecord.cs" />
+    <Compile Include="Movago\RecordIniziale.cs" />
     <Compile Include="TxtFileWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
