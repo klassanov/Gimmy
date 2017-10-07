@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace FilesHelper.Fields
 {
-    public abstract class Field
+    public abstract class Field<T>: IField
     {
         public static char ZeroPadChar = '0';
         public static char SpacePadChar = ' ';
 
+        public T RawValue { get; set; }
         public abstract string FormattedValue { get; }
         public int Length { get; set; }
 
@@ -18,9 +19,17 @@ namespace FilesHelper.Fields
         {                
         }
 
-        public Field(int length)
+        public Field(T rawValue)
         {
+            this.RawValue = rawValue;
+        }
+
+        public Field(T rawValue, int length)
+        {
+            this.RawValue = rawValue;
             this.Length = length;
         }
+
+       
     }
 }

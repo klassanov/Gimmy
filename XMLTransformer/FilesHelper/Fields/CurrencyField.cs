@@ -7,25 +7,16 @@ using System.Threading.Tasks;
 
 namespace FilesHelper.Fields
 {
-    public class CurrencyField: Field
-    {
-        public decimal RawValue { get; set; }
-        public int Precision { get; set; }
-       
-        public NumberFormatInfo NumberFormat { get; set; }
-      
+    public class CurrencyField: Field<decimal>
+    {     
+        public int Precision { get; set; }       
+        public NumberFormatInfo NumberFormat { get; set; }      
 
-        public CurrencyField(int length): base(length)
+        public CurrencyField(decimal rawValue, int length): base(rawValue, length)
         {
             Precision = 2;
             NumberFormat = NumberFormatInfo.InvariantInfo;            
         }
-
-        public CurrencyField(decimal rawValue, int length) : this(length)
-        {
-            this.RawValue = rawValue;           
-        }
-
        
         public override string FormattedValue => RawValue.ToString(NumberFormat).Replace(NumberFormat.CurrencyDecimalSeparator, string.Empty).PadLeft(Length, ZeroPadChar);
     }

@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace FilesHelper.Fields
 {
-    public class IntegerField : Field
+    public class IntegerField : Field<int>
     {
-        public int RawValue { get; set; }
-
-        public IntegerField(int rawValue, int length): base(length)
-        {
-            this.RawValue = rawValue;           
+        public IntegerField(int rawValue, int length): base(rawValue, length)
+        {               
         }
 
         public override string FormattedValue => RawValue.ToString().PadLeft(Length, ZeroPadChar);

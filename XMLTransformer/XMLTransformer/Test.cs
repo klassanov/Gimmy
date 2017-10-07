@@ -1,5 +1,6 @@
 ﻿using FilesHelper;
 using FilesHelper.Fields;
+using FilesHelper.Movago;
 using log4net;
 using System;
 using System.Collections.Generic;
@@ -19,26 +20,31 @@ namespace XMLTransformer
             log4net.Config.XmlConfigurator.Configure();           
             Logger.Debug("Starting");
 
-            CurrencyField nf = new CurrencyField(60.50m, 15);
-            StringField sf = new StringField("Lulu", 8);
+            RecordIniziale r = new RecordIniziale()
+            {
+                CFCSOGG=999999,
+                CFNPROGVSCH=1,
+                NumSped=86,
+                DataSpeed=new DateTime(),
+                AppReg="LULU"
+            
+            
+            };
 
-            Console.WriteLine("Importo formattato: "+nf.FormattedValue);
-            Console.WriteLine("Lunghezza: "+nf.FormattedValue.Length);
-            Console.WriteLine(sf.FormattedValue);
-            Console.WriteLine("Lunghezza: " + sf.FormattedValue.Length);
-            /*
+      
+           
             try
             {
-                EasyfattDocumentReader reader = new EasyfattDocumentReader();
-                EasyfattDocuments documents = reader.ParseXmlDocument();
-                TxtFileWriter.WriteFile();
+                //EasyfattDocumentReader reader = new EasyfattDocumentReader();
+                //EasyfattDocuments documents = reader.ParseXmlDocument();
+                TxtFileWriter.WriteFile(r);
                 Logger.Debug("Done!");
             }
             catch (Exception ex)
             {
                 Logger.Error("There were some errors", ex);
             }
-            */
+           
             Logger.Debug("Finishing");
             Console.ReadKey();
             return 0;

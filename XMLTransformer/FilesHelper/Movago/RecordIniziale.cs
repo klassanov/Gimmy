@@ -7,29 +7,30 @@ using System.Threading.Tasks;
 
 namespace FilesHelper.Movago
 {
-    public class RecordIniziale: MovagoRecord
+    public class RecordIniziale : MovagoRecord
     {
         public override string CodTipoRec { get => "I"; set => base.CodTipoRec = value; }
         public int CFCSOGG { get; set; }
         public int CFNPROGVSCH { get; set; }
-        public string Filler1 { get; set; }
+        public string Filler = string.Empty;
         public int NumSped { get; set; }
         public DateTime DataSpeed { get; set; }
         public string AppReg { get; set; }
-        public string Filler2 { get; set; }
-        
-        protected void CreateFieldsList()
-        {
-            new List<Field>()
-            {
-                CreateField(CFCSOGG, 1),
-                CreateField(CFNPROGVSCH, 15),
-                CreateField(Filler1,6),
-                CreateField(NumSped,10),
-                CreateField(DataSpeed,8),
-                
 
-            };
+        protected override void CreateFieldsList()
+        {         
+            this.FieldsList.AddRange(
+                new List<IField>()
+                {
+                    CreateField(CFCSOGG, 15),
+                    CreateField(CFNPROGVSCH, 1),
+                    CreateField(Filler,6),
+                    CreateField(NumSped,10),
+                    CreateField(DataSpeed),
+                    CreateField(AppReg, 5),
+                    CreateField(Filler, 254)
+                }
+            );
         }
 
     }

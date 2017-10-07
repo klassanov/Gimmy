@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fields\DateField.cs" />
     <Compile Include="Fields\Field.cs" />
+    <Compile Include="Fields\IField.cs" />
     <Compile Include="Fields\IntegerField.cs" />
     <Compile Include="Fields\CurrencyField.cs" />
     <Compile Include="Fields\StringField.cs" />
