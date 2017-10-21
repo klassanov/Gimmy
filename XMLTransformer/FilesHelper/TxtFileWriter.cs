@@ -22,7 +22,7 @@ namespace FilesHelper
             Logger.DebugFormat("File {0} successfully written.", filePath);
         }
 
-        public static void WriteFile(RecordIniziale record)
+        public static void WriteFile(MovagoRecordIniziale record)
         {           
             File.WriteAllLines(DefaultFilePath, new string[] { record.GetRecordString() });
             Logger.DebugFormat("File {0} successfully written.", DefaultFilePath);

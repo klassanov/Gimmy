@@ -20,7 +20,7 @@ namespace XMLTransformer
             log4net.Config.XmlConfigurator.Configure();           
             Logger.Debug("Starting");
 
-            RecordIniziale r = new RecordIniziale()
+            MovagoRecordIniziale r = new MovagoRecordIniziale()
             {
                 CFCSOGG=999999,
                 CFNPROGVSCH=1,

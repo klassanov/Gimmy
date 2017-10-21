@@ -11,22 +11,22 @@ namespace FilesHelper.Movago
     {
         public List<IField> FieldsList { get; set; }
         public virtual string CodTipoRec { get; set; }
+        protected string StrFiller = string.Empty;
+        protected int NumFiller = 0;
 
         public MovagoRecord()
         {
-            this.FieldsList = new List<IField>
-            {
-               CreateField(CodTipoRec, 1)
-            };
+            this.FieldsList = new List<IField>();
+            AddFieldsToList();      
         }
-
-        protected virtual void CreateFieldsList()
-        {           
+        
+        protected virtual void AddFieldsToList()
+        {
+           this.FieldsList.Add(CreateField(CodTipoRec, 1));
         }
 
         public string GetRecordString()
-        {
-            CreateFieldsList();
+        {           
             return string.Join(string.Empty, FieldsList.Select(x => x.FormattedValue));
         }
 
