@@ -85,25 +85,15 @@ namespace FilesHelper.Movago
                 CreateField((int)FACESIGAIVA, 3),
                 CreateField(CSotConCliFor_suggest, 9),
                 CreateField(CSotConDocNonIva_suggesty,9),
-                CreateField(StrFiller,1),
-                CreateField(FACSPLPAYM,3),
-                CreateField(FAITOTDOCM,16),
-                CreateField((int)FACORIG,3),
-                CreateField(FANREGSNCOLL,15),
-                CreateField(FANREGSN,15),
-                CreateField(StrFiller,6),
-
-
-
-
-
-
-
-
-
+                CreateField(StrFiller, 1),
+                CreateField(FACSPLPAYM, 3),
+                CreateField(FAITOTDOCM, 16),
+                CreateField((int)FACORIG, 3),
+                CreateField(FANREGSNCOLL, 15),
+                CreateField(FANREGSN, 15),
+                CreateField(StrFiller, 6),
+                
             });
         }
-
-
     }
 }

@@ -52,6 +52,7 @@
     <Compile Include="Movago\MovagoFileWriter.cs" />
     <Compile Include="Movago\MovagoRecord.cs" />
     <Compile Include="Movago\MovagoRecordDettaglio.cs" />
+    <Compile Include="Movago\MovagoRecordDettaglioFattura.cs" />
     <Compile Include="Movago\MovagoRecordDettaglioTestataFattura.cs" />
     <Compile Include="Movago\MovagoRecordIniziale.cs" />
     <Compile Include="Movago\MovagoEnums.cs" />

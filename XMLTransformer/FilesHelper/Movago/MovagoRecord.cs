@@ -42,6 +42,7 @@ namespace FilesHelper.Movago
 
         public StringField CreateField(string rawValue, int length)
         {
+            rawValue = rawValue ?? string.Empty;
             return new StringField(rawValue, length);
         }
 

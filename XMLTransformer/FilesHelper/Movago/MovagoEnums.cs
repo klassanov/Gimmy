@@ -67,5 +67,11 @@ namespace FilesHelper.Movago
             FATTURE_DA_INCASSARE = 103,
             FATTURE_DA_PAGARE = 104
         }
+
+        public enum TipoOperazioneBlackList: int
+        {
+            BENI=1,
+            SERVIZI=2
+        }
     }
 }

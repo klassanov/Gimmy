@@ -15,7 +15,7 @@ namespace FilesHelper.Movago
         protected override void AddFieldsToList()
         {
             base.AddFieldsToList();
-            this.FieldsList.Add(CreateField(CodTipoDett, 1));
+            this.FieldsList.Add(CreateField(CodTipoDett, 2));
         }
     }
 }
