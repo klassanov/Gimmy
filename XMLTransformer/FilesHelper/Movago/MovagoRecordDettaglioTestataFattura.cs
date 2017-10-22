@@ -44,14 +44,6 @@ namespace FilesHelper.Movago
         public int FANREGSNCOLL { get; set; }
         public int FANREGSN { get; set; }
 
-
-
-
-        public MovagoRecordDettaglioTestataFattura(bool dittaIndividuale) : base()
-        {
-            this.dittaIndividuale = dittaIndividuale;
-        }
-
         protected override void AddFieldsToList()
         {
             base.AddFieldsToList();

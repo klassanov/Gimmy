@@ -12,6 +12,8 @@ namespace XMLTransformer.Tests
     [TestClass]
     public class MovagoRecordsTest
     {
+        private int recordLength = 300;
+
         public MovagoRecordsTest()
         {
             //
@@ -63,13 +65,39 @@ namespace XMLTransformer.Tests
         public void MovagoRecordInizialeTest()
         {
             //Arrange
-            MovagoRecordIniziale recordIniziale = new MovagoRecordIniziale();
+            MovagoRecordIniziale record = new MovagoRecordIniziale();
 
             //Act
-            string recordInizialeString = recordIniziale.GetRecordString();
+            string recordString = record.GetRecordString();
 
             //Assert
-            Assert.AreEqual(recordInizialeString.Length, 300);
+            Assert.AreEqual(recordString.Length, recordLength);
+        }
+
+        [TestMethod]
+        public void MovagoRecordDettaglioTestataFatturaTest()
+        {
+            //Arrange
+            MovagoRecordDettaglioTestataFattura record = new MovagoRecordDettaglioTestataFattura();
+
+            //Act
+            string recordString = record.GetRecordString();
+
+            //Assert
+            Assert.AreEqual(recordString.Length, recordLength);
+        }
+
+        [TestMethod]
+        public void MovagoRecordDettaglioatturaTest()
+        {
+            //Arrange
+            MovagoRecordDettaglioFattura record = new MovagoRecordDettaglioFattura();
+
+            //Act
+            string recordString = record.GetRecordString();
+
+            //Assert
+            Assert.AreEqual(recordString.Length, recordLength);
         }
     }
 }
