@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace FilesHelper
 {
-    public class TxtFileWriter
+    public class MovagoFileWriter
     {
         public static string DefaultFilePath= "D:/SW Development/Customers/Gimmy/XML Transformer/MyTextFile.txt";
 
-        private static ILog Logger = LogManager.GetLogger(typeof(TxtFileWriter));
+        private static ILog Logger = LogManager.GetLogger(typeof(MovagoFileWriter));
         public static void WriteFile(string filePath=null)
         {            
             filePath = filePath ?? "D:/SW Development/Customers/Gimmy/XML Transformer/MyTextFile.txt";
@@ -25,6 +25,12 @@ namespace FilesHelper
         public static void WriteFile(MovagoRecordIniziale record)
         {           
             File.WriteAllLines(DefaultFilePath, new string[] { record.GetRecordString() });
+            Logger.DebugFormat("File {0} successfully written.", DefaultFilePath);
+        }
+
+        public static void WriteFile(IEnumerable<MovagoRecord> recordList)
+        {
+            File.WriteAllLines(DefaultFilePath, recordList.ToStringArray());
             Logger.DebugFormat("File {0} successfully written.", DefaultFilePath);
         }
     }

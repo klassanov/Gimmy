@@ -50,5 +50,10 @@ namespace FilesHelper.Movago
         {
             return new DateField(rawValue, dateFormat);
         }
+
+        public string[] ToStringArray()
+        {
+            return null;
+        }
     }
 }

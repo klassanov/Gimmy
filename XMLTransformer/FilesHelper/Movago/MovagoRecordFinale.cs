@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FilesHelper.Movago
 {
-    public class MovagoRecordIniziale : MovagoRecordEstremo
+    public class MovagoRecordFinale: MovagoRecordEstremo
     {
-        public override string CodTipoRec { get => "I"; set => base.CodTipoRec = value; }
+        public override string CodTipoRec { get => "C"; set => base.CodTipoRec = value; }
     }
 }

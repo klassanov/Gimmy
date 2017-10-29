@@ -73,5 +73,11 @@ namespace FilesHelper.Movago
             BENI=1,
             SERVIZI=2
         }
+
+        public enum TipoProgressivoScheda: int
+        {
+            ORDINARIA=1,
+            SEMPLIFICATA=2
+        }
     }
 }

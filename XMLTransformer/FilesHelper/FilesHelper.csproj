@@ -49,14 +49,16 @@
     <Compile Include="Fields\IntegerField.cs" />
     <Compile Include="Fields\CurrencyField.cs" />
     <Compile Include="Fields\StringField.cs" />
-    <Compile Include="Movago\MovagoFileWriter.cs" />
+    <Compile Include="Movago\MovagoExtensions.cs" />
     <Compile Include="Movago\MovagoRecord.cs" />
     <Compile Include="Movago\MovagoRecordDettaglio.cs" />
     <Compile Include="Movago\MovagoRecordDettaglioFattura.cs" />
     <Compile Include="Movago\MovagoRecordDettaglioTestataFattura.cs" />
+    <Compile Include="Movago\MovagoRecordEstremo.cs" />
+    <Compile Include="Movago\MovagoRecordFinale.cs" />
     <Compile Include="Movago\MovagoRecordIniziale.cs" />
     <Compile Include="Movago\MovagoEnums.cs" />
-    <Compile Include="TxtFileWriter.cs" />
+    <Compile Include="MovagoFileWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

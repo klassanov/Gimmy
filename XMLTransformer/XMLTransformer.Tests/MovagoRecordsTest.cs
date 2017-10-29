@@ -99,5 +99,18 @@ namespace XMLTransformer.Tests
             //Assert
             Assert.AreEqual(recordString.Length, recordLength);
         }
+
+        [TestMethod]
+        public void MovagoRecordFinaleTest()
+        {
+            //Arrange
+            MovagoRecordFinale recordFinale = new MovagoRecordFinale();
+
+            //Act
+            string recordString=recordFinale.GetRecordString();
+
+            //Assert
+            Assert.AreEqual(recordString.Length, recordLength);
+        }
     }
 }
